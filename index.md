@@ -70,7 +70,7 @@ To install ownCloud server perform the following steps:
       --admin-user "admin" \
       --admin-pass "password"
       ```
-      For details on `occ`, see [Using the OCC Command](https://doc.owncloud.com/server/admin_manual/configuration/server/occ_command.html
+      For details on `occ`, see [Using the OCC Command](https://doc.owncloud.com/server/admin_manual/configuration/server/occ_command.html)
 
 
 ## <a name="DOCKINST"></a>Installing with Docker
