@@ -7,7 +7,7 @@ The guide includes the following topics:
 
 
 
-# <a name="INSTGUIDE"></aInstallation Guide
+# <a name="INSTGUIDE"></a>Installation Guide
 
 You can install the OwnCloud server using the instructions given in the following topics
 
@@ -81,7 +81,7 @@ See [Installing With Docker](https://doc.owncloud.com/server/admin_manual/instal
 See [Linux Package Manager](https://doc.owncloud.com/server/admin_manual/installation/linux_packetmanager_install.html) for details.
 
 
-# <a name="CONFGUIDE"></aConfiguring ownCloud Server
+# <a name="CONFGUIDE"></a>Configuring ownCloud Server
 
 
 
