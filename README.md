@@ -1,12 +1,13 @@
-# OwnCloud Quickstart Guide
+# ownCloud Quickstart Guide
 This guide provides information on ownCloud server installation, setting up the server, and accessing your OwnCloud server through a OwnCloud client.
 The guide includes the following topics:
 
-- [Installation Guide](https://github.com/rishabh06/RedHat-Test/wiki/Installation-Guide)
+- [Installation Guide](#INSTGUIDE)
+- [Configuring ownCloud Server](#CONFGUIDE)
 
 
 
-# Installation Guide
+# <a name="INSTGUIDE"></aInstallation Guide
 
 You can install the OwnCloud server using the instructions given in the following topics
 
@@ -72,11 +73,15 @@ To install ownCloud server perform the following steps:
       For details on `occ`, see [Using the OCC Command](https://doc.owncloud.com/server/admin_manual/configuration/server/occ_command.html
 
 
-
-
 ## <a name="DOCKINST"></a>Installing with Docker
 See [Installing With Docker](https://doc.owncloud.com/server/admin_manual/installation/docker/) for details.
 
 ## <a name="LPMINST"></a>Installing with Linux Package Manager
 
 See [Linux Package Manager](https://doc.owncloud.com/server/admin_manual/installation/linux_packetmanager_install.html) for details.
+
+
+# <a name="CONFGUIDE"></aConfiguring ownCloud Server
+
+
+
