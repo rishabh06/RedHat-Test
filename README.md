@@ -11,7 +11,7 @@ The guide includes the following topics:
 
 # <a name="INSTGUIDE"></a>Installation Guide
 
-You can install the OwnCloud server using the instructions given in the following topics
+You can install the OwnCloud server using the instructions given in the following topics.
 
 - [Manual Installation](#MANINST)
 - [Installing With Docker](#DOCKINST)
@@ -19,7 +19,7 @@ You can install the OwnCloud server using the instructions given in the followin
 
 
 ## <a name="MANINST"></a>Manual Installation
-Before you begin check the prerequisites for the ownCloud server on [Manual Installation Prerequisites](https://doc.owncloud.com/server/admin_manual/installation/manual_installation/manual_installation_prerequisites.html) and [Supported Databases](https://doc.owncloud.com/server/admin_manual/installation/manual_installation/manual_installation_db.html)
+Before you begin, check the prerequisites for the ownCloud server on [Manual Installation Prerequisites](https://doc.owncloud.com/server/admin_manual/installation/manual_installation/manual_installation_prerequisites.html) and [Supported Databases](https://doc.owncloud.com/server/admin_manual/installation/manual_installation/manual_installation_db.html)
 
 To install ownCloud server perform the following steps:
 1. Select the desired zip or tar.bz2 archive of the source package from [Server Packages](https://owncloud.com/download-server/#instructions-server), and download the file.
@@ -49,15 +49,15 @@ To install ownCloud server perform the following steps:
    -  **Script Guided Installation**: ownCloud has scripts that assist you to easily install or upgrade ownCloud or manage ownership and permissions. 
       Using the Script Guided Installation, you can handle many useful installation and update options automatically. See [Scripts for Script Guided Installation](https://doc.owncloud.com/server/admin_manual/installation/manual_installation/script_guided_install.html)
 
-   -  **Command Line Guided Installation**: You can use this method if you want to do the basic setup without any changes or physical installation options.                Consider using the Script Guided Installation if you plan improving your setup from step one.
-      To install ownCloud using command line, unpack the archive, and copy the `ownCloud` directory that contains all the unpacked file to the Apache document root
+   -  **Command Line Guided Installation**: You can use this method if you want to do the basic setup without any changes or physical installation options.                Consider using the Script Guided Installation if you plan to improve your setup from step one.
+      To install ownCloud using the command line, unpack the archive, and copy the `ownCloud` directory that contains all the unpacked file to the Apache document root.
       ```shell
       $ tar -xjf owncloud-complete-yyyymmdd.tar.bz2
    
       $ cp -r owncloud /var/www
       ```
      In the above example /var/www is considered as the apache document root.
-     Post physical installation, set the correct ownership and permissions upfront. It is recommened to use the scripts from the Script Guided Installation for setting correct        ownership and permissions.
+     Post physical installation, set the correct ownership and permissions upfront. It is recommended to use the scripts from the Script Guided Installation for setting correct        ownership and permissions.
     
    
 5. Finalize the installation by creating the administrator and database users and setting their passwords. Create these users by using one of the following methods:
@@ -84,20 +84,20 @@ See [Linux Package Manager](https://doc.owncloud.com/server/admin_manual/install
 
 
 # <a name="CONFGUIDE"></a>Configuring ownCloud Server
-After installing ownCloud successfully, ownCloud recommends that you perform the following post installation tasks. These configurations help in improving the overall ownCloud performance and accesibility.
+After installing ownCloud successfully, ownCloud recommends that you perform the following post installation tasks. These configurations help in improving the overall ownCloud performance and accessibility.
 
 - [Background Jobs](#BJOBS)
 - [Caching](#CACHING)
 - [Trusted Domains](#TRUDOM)
 
 ## <a name="BJOBS"></a>Background Jobs
-ownCloud requires some jobs to run periodically to mantain its overall performance. These are CRON jobs that can be configured to run automatically without any user interaction. See [Background Jobs](https://doc.owncloud.com/server/admin_manual/configuration/server/background_jobs_configuration.html) for details.
+ownCloud requires some jobs to run periodically to maintain its overall performance. These are CRON jobs that can be configured to run automatically without any user interaction. See [Background Jobs](https://doc.owncloud.com/server/admin_manual/configuration/server/background_jobs_configuration.html) for details.
 
 ## <a name="CACHING"></a>Configure Caching
 It is recommended to install and enable caching (PHP opcode Cache and/or Data Cache), which significantly improves performance. See [Memory Caching](https://doc.owncloud.com/server/admin_manual/configuration/server/caching_configuration.html) for details.
 
 ## <a name="TRUDOM"></a>Trusted Domains
-All URLs used to access your ownCloud server must be white-listed in your config.php file, under the trusted_domains setting. Users are allowed to log into ownCloud only when they point their browsers to a URL that is listed in the trusted_domains setting.
+All URLs used to access your ownCloud server must be white-listed in your config.php file, under the trusted_domains setting. Users are allowed to log into ownCloud only when they point their browsers to a URL listed in the trusted_domains setting.
 
 This setting is important when changing or moving to a new domain name. You may use IP addresses and domain names. Adding the server's IP address in the configuration file enables your users to connect to the ownCloud server using the servers's IP address and port 8080.
 
@@ -116,30 +116,30 @@ For further information on improving the quality of your ownCloud installation, 
 
 
 # <a name="CRUSER"></a>Creating a User
-Administrators can add new uses to ownCLoud using the User management page of your ownCloud Web UI.
+Administrators can add new uses to ownCloud using the User management page of your ownCloud Web UI.
 To create a user account:
 
 1. Enter a Login Name and initial Password for the new user.
-2. Optionally, assign Groups memberships
-3. Click the Create button
+2. Optionally, assign Groups memberships.
+3. Click the Create button.
 
 
 ![users-create](https://user-images.githubusercontent.com/22167451/113716462-40586700-9708-11eb-82ed-b76786ae3c5d.png)
 
 
-Login names may contain letters (a-z, A-Z), numbers (0-9), dashes (-), underscores (_), periods (.) and at signs (@). After creating the user, you may fill in their Full Name if it is different than the login name, or leave it for the user to complete.
+Login names may contain letters (a-z, A-Z), numbers (0-9), dashes (-), underscores (_), periods (.), and at signs (@). After creating the user, you may fill in their Full Name if it is different than the login name, or leave it for the user to complete.
 
 If you have checked Send email to new user in the control panel on the lower left sidebar, you may also enter the new user’s email address, and ownCloud will automatically send them a notification with their new login information. You may edit this email using the email template editor on your Admin page (see Email Configuration).
 
 # <a name="OWNCLIENT"></a>Connecting to ownCloud Server using ownCloud Client
 
-You can connect to the ownCloud server where you have an account, using the ownCloud client. There are two versions of ownCloud client to support access from desktop and mobile devices. You can download the ownCloud client from the [Download Server](https://owncloud.com/download-server/)
+You can connect to the ownCloud server where you have an account using the ownCloud client. There are two versions of ownCloud client to support access from desktop and mobile devices. You can download the ownCloud client from the [Download Server](https://owncloud.com/download-server/)
 
 To connect to ownCloud server using a ownCloud client perform the following steps:
 1. Download and install the ownCloud client.
 2. Enter the URL of ownCloud server when the prompt for server URL appears.
 3. Enter your user credentials when prompted.
 4. Select the remote folders to sync from and the local folders to sync to, and click Connect.
-   On the Local Folder Option screen you may sync all of your files on the ownCloud server, or select individual folders. The default local sync folder is ownCloud, in your home directory. You may change this as well.
+   On the Local Folder Options screen you may sync all of your files on the ownCloud server, or select individual folders. The default local sync folder is ownCloud, in your home directory. You may change this as well.
 6. After successful syncing click Finish. 
-   You can view your files in the Web GUI or your local ownCloud folder
+   You can view your files in the Web GUI or your local ownCloud folder.
