@@ -86,7 +86,7 @@ After installing ownCloud successfully, ownCloud recommends that you perform the
 
 - [Background Jobs](#BJOBS)
 - [Caching](#CACHING)
-- [TRUSTED DOMAINS](#TRUDOM)
+- [Trusted Domains](#TRUDOM)
 
 ## <a name="BJOBS"></a>Background Jobs
 ownCloud requires some jobs to run periodically to mantain its overall performance. These are CRON jobs that can be configured to run automatically without any user interaction. See [Background Jobs](https://doc.owncloud.com/server/admin_manual/configuration/server/background_jobs_configuration.html) for details.
