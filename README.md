@@ -4,7 +4,8 @@ The guide includes the following topics:
 
 - [Installation Guide](#INSTGUIDE)
 - [Configuring ownCloud Server](#CONFGUIDE)
-- Creating a User(#CRUSER)
+- [Creating a User](#CRUSER)
+- [Connecting to ownCloud Server using ownCloud Client](#OWNCLIENT)
 
 
 
@@ -129,3 +130,16 @@ To create a user account:
 Login names may contain letters (a-z, A-Z), numbers (0-9), dashes (-), underscores (_), periods (.) and at signs (@). After creating the user, you may fill in their Full Name if it is different than the login name, or leave it for the user to complete.
 
 If you have checked Send email to new user in the control panel on the lower left sidebar, you may also enter the new user’s email address, and ownCloud will automatically send them a notification with their new login information. You may edit this email using the email template editor on your Admin page (see Email Configuration).
+
+# <a name="OWNCLIENT"></a>Connecting to ownCloud Server using ownCloud Client
+
+You can connect to the ownCloud server where you have an account, using the ownCloud client. There are two versions of ownCloud client to support access from desktop and mobile devices. You can download the ownCloud client from the [Download Server](https://owncloud.com/download-server/)
+
+To connect to ownCloud server using a ownCloud client perform the following steps:
+1. Download and install the ownCloud client.
+2. Enter the URL of ownCloud server when the prompt for server URL appears.
+3. Enter your user credentials when prompted.
+4. Select the remote folders to sync from and the local folders to sync to, and click Connect.
+   On the Local Folder Option screen you may sync all of your files on the ownCloud server, or select individual folders. The default local sync folder is ownCloud, in your home directory. You may change this as well.
+6. After successful syncing click Finish. 
+   You can view your files in the Web GUI or your local ownCloud folder
