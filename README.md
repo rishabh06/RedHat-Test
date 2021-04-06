@@ -25,7 +25,7 @@ To install ownCloud server perform the following steps:
     $ wget https://download.owncloud.org/community/owncloud-complete-yyyymmdd.tar.bz2
     ```
     Replace "owncloud-complete-yyyymmdd.tar.bz2" in the above command with the selected package name.
-2. Download the corresponding MD5 or SHA256 checksum file and verify the file integrity.
+2. Download the corresponding MD5 or SHA256 checksum file and verify the file's integrity.
     ```shell
     $ wget https://download.owncloud.org/community/owncloud-complete-yyyymmdd.tar.bz2.md5
 
@@ -82,6 +82,32 @@ See [Linux Package Manager](https://doc.owncloud.com/server/admin_manual/install
 
 
 # <a name="CONFGUIDE"></a>Configuring ownCloud Server
+After installing ownCloud successfully, ownCloud recommends that you perform the following post installation tasks. These configurations help in improving the overall ownCloud performance and accesibility.
+
+- [Background Jobs](#BJOBS)
+- [Caching](#CACHING)
+- [TRUSTED DOMAINS](#TRUDOM)
+
+## <a name="BJOBS"></a>Background Jobs
+ownCloud requires some jobs to run periodically to mantain its overall performance. These are CRON jobs that can be configured to run automatically without any user interaction. See [Background Jobs](https://doc.owncloud.com/server/admin_manual/configuration/server/background_jobs_configuration.html) for details.
+
+## <a name="CACHING"></a>Configure Caching
+It is recommended to install and enable caching (PHP opcode Cache and/or Data Cache), which significantly improves performance. See [Memory Caching](https://doc.owncloud.com/server/admin_manual/configuration/server/caching_configuration.html) for details.
+
+## <a name="TRUDOM"></a>Trusted Domains
+All URLs used to access your ownCloud server must be white-listed in your config.php file, under the trusted_domains setting. Users are allowed to log into ownCloud only when they point their browsers to a URL that is listed in the trusted_domains setting.
+
+This setting is important when changing or moving to a new domain name. You may use IP addresses and domain names. Adding the server's IP address in the configuration file enables your users to connect to the ownCloud server using the servers's IP address and port 8080.
+
+A typical configuration may look like this:
+
+'trusted_domains' => [
+   0 => 'localhost',
+   1 => 'server1.example.com',
+   2 => '192.168.1.50',
+],
+The loopback address, 127.0.0.1, is automatically white-listed, so as long as you have access to the physical server you can always log in. In the event that a load-balancer is in place, there will be no issues as long as it sends the correct X-Forwarded-Host header.
 
 
+For further information on improving the quality of your ownCloud installation, see the [Configuration Notes and Tips](https://doc.owncloud.com/server/admin_manual/installation/configuration_notes_and_tips.html.)
 
