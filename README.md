@@ -16,7 +16,7 @@ You can install the OwnCloud server using the instructions given in the followin
 
 
 ## <a name="MANINST"></a>Manual Installation
-`Before you begin check the prerequisites for the ownCloud server on` [Manual Installation Prerequisites] (https://doc.owncloud.com/server/admin_manual/installation/manual_installation/manual_installation_prerequisites.html) and [Supported Databases](https://doc.owncloud.com/server/admin_manual/installation/manual_installation/manual_installation_db.html)
+Before you begin check the prerequisites for the ownCloud server on [Manual Installation Prerequisites](https://doc.owncloud.com/server/admin_manual/installation/manual_installation/manual_installation_prerequisites.html) and [Supported Databases](https://doc.owncloud.com/server/admin_manual/installation/manual_installation/manual_installation_db.html)
 
 To install the ownCloud server perform the following steps:
 1. Select the desired zip or tar.bz2 archive of the source package from [Server Packages](https://owncloud.com/download-server/#instructions-server), and download the file.
