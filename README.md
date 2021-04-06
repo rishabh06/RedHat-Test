@@ -8,7 +8,7 @@ The guide includes the following topics:
 
 # Installation Guide
 
-You can install the OwnCloud server using the instructions given in the following topics. Click on the topic to view instructions on your desired method of installation. 
+You can install the OwnCloud server using the instructions given in the following topics
 
 - [Manual Installation](#MANINST)
 - [Installing With Docker](#DOCKINST)
