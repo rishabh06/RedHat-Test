@@ -4,6 +4,7 @@ The guide includes the following topics:
 
 - [Installation Guide](#INSTGUIDE)
 - [Configuring ownCloud Server](#CONFGUIDE)
+- Creating a User(#CRUSER)
 
 
 
@@ -112,3 +113,15 @@ The loopback address, 127.0.0.1, is automatically white-listed, so as long as yo
 
 For further information on improving the quality of your ownCloud installation, see the [Configuration Notes and Tips](https://doc.owncloud.com/server/admin_manual/installation/configuration_notes_and_tips.html.)
 
+
+# <a name="CRUSER"></a>Crating a User
+Administrators can add new uses to ownCLoud using the User management page of your ownCloud Web UI.
+To create a user account:
+
+1. Enter a Login Name and initial Password for the new user.
+2. Optionally, assign Groups memberships
+3. Click the Create button
+![users-create](https://user-images.githubusercontent.com/22167451/113716462-40586700-9708-11eb-82ed-b76786ae3c5d.png)
+Login names may contain letters (a-z, A-Z), numbers (0-9), dashes (-), underscores (_), periods (.) and at signs (@). After creating the user, you may fill in their Full Name if it is different than the login name, or leave it for the user to complete.
+
+If you have checked Send email to new user in the control panel on the lower left sidebar, you may also enter the new user’s email address, and ownCloud will automatically send them a notification with their new login information. You may edit this email using the email template editor on your Admin page (see Email Configuration).
