@@ -100,12 +100,13 @@ All URLs used to access your ownCloud server must be white-listed in your config
 This setting is important when changing or moving to a new domain name. You may use IP addresses and domain names. Adding the server's IP address in the configuration file enables your users to connect to the ownCloud server using the servers's IP address and port 8080.
 
 A typical configuration may look like this:
-
+```shell
 'trusted_domains' => [
    0 => 'localhost',
    1 => 'server1.example.com',
    2 => '192.168.1.50',
 ],
+```
 The loopback address, 127.0.0.1, is automatically white-listed, so as long as you have access to the physical server you can always log in. In the event that a load-balancer is in place, there will be no issues as long as it sends the correct X-Forwarded-Host header.
 
 
