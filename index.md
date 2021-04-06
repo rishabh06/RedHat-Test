@@ -1,4 +1,3 @@
-# ownCloud Quickstart Guide
 This guide provides information on ownCloud server installation, setting up the server, and accessing your OwnCloud server through a OwnCloud client.
 The guide includes the following topics:
 
