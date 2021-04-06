@@ -23,7 +23,7 @@ To install the ownCloud server perform the following steps:
     ```shell
     wget https://download.owncloud.org/community/owncloud-complete-yyyymmdd.tar.bz2
     ```
-  Replace "owncloud-complete-yyyymmdd.tar.bz2" in the above command with the selected package name.
+    Replace "owncloud-complete-yyyymmdd.tar.bz2" in the above command with the selected package name.
 2. Download the corresponding MD5 or SHA256 checksum file and verify the file integrity.
     ```shell
     wget https://download.owncloud.org/community/owncloud-complete-yyyymmdd.tar.bz2.md5
@@ -43,16 +43,16 @@ To install the ownCloud server perform the following steps:
     ```
 4. Install the ownCloud server using one of the following methods:
    
- -  Script Guided Installation: ownCloud has scripts that assist you to easily install or upgrade ownCloud or manage ownership and permissions. 
-Using the Script Guided Installation, you can handle many useful installation and update options automatically. See [Scripts for Script Guided Installation](https://doc.owncloud.com/server/admin_manual/installation/manual_installation/script_guided_install.html)
+   -  Script Guided Installation: ownCloud has scripts that assist you to easily install or upgrade ownCloud or manage ownership and permissions. 
+      Using the Script Guided Installation, you can handle many useful installation and update options automatically. See [Scripts for Script Guided Installation]  (https://doc.owncloud.com/server/admin_manual/installation/manual_installation/script_guided_install.html)
 
--  Command Line Guided Installation: You can use this method if you want to do the basic setup without any changes or physical installation options. Consider using the Script Guided Installation if you plan improving your setup from step one.
-   To install ownCloud using command line, unpack the archive and copy the `ownCloud` directory that contains all the unpacked file to the Apache document root
-   ```shell
-   tar -xjf owncloud-complete-yyyymmdd.tar.bz2
+   -  Command Line Guided Installation: You can use this method if you want to do the basic setup without any changes or physical installation options. Consider using the Script       Guided Installation if you plan improving your setup from step one.
+      To install ownCloud using command line, unpack the archive and copy the `ownCloud` directory that contains all the unpacked file to the Apache document root
+      ```shell
+      tar -xjf owncloud-complete-yyyymmdd.tar.bz2
    
-   cp -r owncloud /var/www
-   ```
+      cp -r owncloud /var/www
+      ```
    In the above example /var/www is considered as the apache document root.
    Post physical installation, set the correct ownership and permissions upfront. To do so, it is suggested use the scripts from the Script Guided Installation.
    
