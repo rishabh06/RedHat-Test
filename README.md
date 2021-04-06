@@ -10,12 +10,12 @@ The guide includes the following topics:
 
 You can install the OwnCloud server using the instructions given in the following topics. Click on the topic to view instructions on your desired method of installation. 
 
-- [Manual Installation](https://owncloud.com/download-server/#instructions-server)
+- [Manual Installation](#MANINST)
 - [Installing With Docker](https://doc.owncloud.com/server/admin_manual/installation/docker/)
 - [Linux Package Manager](https://doc.owncloud.com/server/admin_manual/installation/linux_packetmanager_install.html)
 
 
-## Manual Installation
+## <a name="MANINST"></a>Manual Installation
 `Before you begin check the prerequisites for the ownCloud server on` [Manual Installation Prerequisites](https://doc.owncloud.com/server/admin_manual/installation/manual_installation/manual_installation_prerequisites.html)
 
 To install ownCloud Server manually perform the following steps:
