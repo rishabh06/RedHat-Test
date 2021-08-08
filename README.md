@@ -56,7 +56,7 @@ To install ownCloud server perform the following steps:
    
       $ cp -r owncloud /var/www
       ```
-     In the above example /var/www is considered as the apache document root.
+     In the above example /var/www is considered as the Apache document root.
      Post physical installation, set the correct ownership and permissions upfront. It is recommended to use the scripts from the Script Guided Installation for setting correct        ownership and permissions.
     
    
